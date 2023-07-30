@@ -102,6 +102,8 @@ target_link_libraries(${PROJECT_NAME}
         )
 add_library(simulator tools/simulator/simulator.cpp)
 target_link_libraries(simulator ${PROJECT_NAME})
+add_executable(navgation_straight exe/navgation_straight.cc)
+target_link_libraries(navgation_straight ${PROJECT_NAME})
 add_library(exitRoom tools/navigation/roomExit.cpp)
 target_link_libraries(exitRoom ${PROJECT_NAME})
 add_subdirectory(exe)
